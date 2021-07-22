@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Welcome to Mega Book Store</title>
+</head>
+
+<body>
+    <!--- Code Starts from Here-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Mega Book store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+
+                    </li>
+
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="services.html">Computer Engineering</a></li>
+                            <li><a class="dropdown-item" href="services.html">Mechanical Engineering</a></li>
+                            <li><a class="dropdown-item" href="services.html">Chemical Engineering</a></li>
+                            <li><a class="dropdown-item" href="services.html">Motivational Books</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="services.html">Novel Stories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input id="t1" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit" onclick="search()">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>August Sale!</strong> You can now buy books on discount using code AUGUST2021.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <div class="container mt-3">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3">Welcome to Mega Book Store!</h1>
+                <p>Online Books available for various Engineering branches. Best Bookseller in Gujarat state of India</p>
+                <p><a class="btn btn-success btn-lg"
+                        href="https://www.google.com/search?rlz=1C1CHZL_enIN825IN825&tbs=lf:1,lf_ui:10&tbm=lcl&sxsrf=ALeKk01xImRwRPfZDPwvjbCHWj9XbMM-Pg:1626721762389&q=mega+book+store&rflfq=1&num=10&ved=2ahUKEwjCia7m6u_xAhVlzDgGHbCJD3AQtgN6BAgFEAU#rlfi=hd:;si:1144026165712682583;mv:[[21.311451251857566,73.03534570393585],[21.243788285397322,72.87295404133819],null,[21.27762365839052,72.95414987263702],13]"
+                        target="_blank" role="button">View on Google Map &raquo;</a></p>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+    <style>
+        .bcontent {
+            margin-top: 50px;
+        }
+    </style>
+    <div class="container bcontent">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="home1.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" />
+
+                <h2>$49.99</h2>
+                <h5 id="title" class="a-spacing-none a-text-normal">
+                    <span id="productTitle" class="a-size-extra-large">
+                        Python Crash Course, 2Nd Edition: A Hands-On, Project-Based Introduction To Programming
+                    </span>
+
+                    <span id="productSubtitle" class="a-size-large a-color-secondary">
+                        Paperback – 3 May 2019
+                    </span>
+
+                </h5>
+                <div id="bylineInfo_feature_div" class="celwidget" data-feature-name="bylineInfo"
+                    data-csa-c-id="fir990-51c60v-ivrwlh-qqbme" data-cel-widget="bylineInfo_feature_div">
+                    <div id="bylineInfo" class="a-section a-spacing-micro bylineHidden feature"
+                        data-cel-widget="bylineInfo">
+                        by
+                        <span class="author notFaded" data-width="">
+                            <span class="a-declarative" data-action="a-popover"
+                                data-a-popover="{&quot;closeButtonLabel&quot;:&quot;Close Author Dialog Popver&quot;,&quot;name&quot;:&quot;contributor-info-B01DPU378I&quot;,&quot;position&quot;:&quot;triggerBottom&quot;,&quot;popoverLabel&quot;:&quot;Author Dialog Popover&quot;,&quot;allowLinkDefault&quot;:&quot;true&quot;}">
+                                <a data-asin="B01DPU378I" class="a-link-normal contributorNameID"
+                                    href="#" onclick="cp()">Eric Matthes</a>
+                                <a href="javascript:void(0)" class="a-popover-trigger a-declarative"><i
+                                        class="a-icon a-icon-popover"></i></a>
+                            </span>
+                            <span class="contribution" spacing="none">
+                                <span class="a-color-secondary">(Author)</span>
+                            </span>
+
+                        </span>
+                    </div>
+                </div>
+                <p><a class="btn btn-warning btn-lg" href="#" onclick="buynow()" role="button">Add to Cart</a></p>
+                
+            </div><!-- /.col-lg-4 -->
+            <div class="col-md-4 text-center">
+                <img src="home2.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" />
+
+                <h2>$35.99</h2>
+                <h5 id="title" class="a-spacing-none a-text-normal">
+                    <span id="productTitle" class="a-size-extra-large">
+                        C++: The Complete Reference for Game Development and Software Development, 4th Edition Paperback – 1 July 2017
+                    </span>
+
+                    <span id="productSubtitle" class="a-size-large a-color-secondary">
+                        Paperback – 3 May 2019
+                    </span>
+
+                </h5>
+                <br>
+                <p><a class="btn btn-warning btn-lg" href="#" onclick="buynow()" role="button">Add to Cart</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-md-4 text-center">
+                <img src="home3.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" />
+
+                <h2>$25.99</h2>
+                <h5 id="title" class="a-spacing-none a-text-normal">
+                    <span id="productTitle" class="a-size-extra-large">
+                        Engineering Mathematics For Semester I And Ii by C B Gupta and S R Singh and Mukesh Kumar, McGraw Hill
+                    </span>
+
+                    <span id="productSubtitle" class="a-size-large a-color-secondary">
+                        Paperback – 3 May 2019
+                    </span>
+
+                </h5><br>
+                <p><a class="btn btn-warning btn-lg" href="#" onclick="buynow()" role="button">Add to Cart</a></p>
+            </div><!-- /.col-lg-4 -->
+        </div>
+    </div>
+
+<hr>
+
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+        <span class="text-muted">&copy; 2019-2021 Company.Inc . 
+            <a href='privacy.html'>Privacy</a> . <a href='agree.html'>Terms</a>
+        </span>
+    </div>
+</footer>
+   <script src="facet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

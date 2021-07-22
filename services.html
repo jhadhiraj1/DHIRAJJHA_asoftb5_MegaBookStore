@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Services provided by Mega Book Store</title>
+</head>
+
+<body>
+    <!--- Code Starts from Here-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Mega Book store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+
+                    </li>
+
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="services.html">Computer Engineering</a></li>
+                            <li><a class="dropdown-item" href="services.html">Mechanical Engineering</a></li>
+                            <li><a class="dropdown-item" href="services.html">Chemical Engineering</a></li>
+                            <li><a class="dropdown-item" href="services.html">Motivational Books</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="services.html">Novel Stories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit" onclick="search()">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <style>
+        .content {
+            margin-left: 15px;
+        }
+
+        .scontent {
+            margin-left: 54px;
+
+        }
+    </style>
+
+    <div class="container bcontent">
+        <h2 class="a-text-normal">Computer Engineering</h2>
+        <hr>
+        <div class="row">
+            <div class="card" style="width: 18rem;">
+                <img src="cs1.jpg" class="card-img-top" width="262" height="330" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Eloquent JavaScript: A Modern Introduction to Programming, by Marijn Haverbeke.
+                    </p>
+                    <button type="button" class="btn btn-warning rounded  btn-md scontent" onclick="buynow()">Buy now</button>
+                </div>
+            </div>
+            <div class="card content" style="width: 18rem;">
+                <img src="cs2.jpg" class="card-img-top" width="262" height="330" alt="...">
+                <div class="card-body">
+                    <p class="card-text"> Learn Python the Hard Way (3rd Edition). A Modern way of using Python.</p>
+                    <button type="button" class="btn btn-warning rounded  btn-md scontent" onclick="buynow()">Buy now</button>
+                </div>
+            </div>
+            <div class="card content" style="width: 18rem;">
+                <img src="cs3.jpg" class="card-img-top" width="262" height="330" alt="...">
+                <div class="card-body">
+                    <p class="card-text">A fun of learning React and React JS. A simplify way of Learning.</p>
+                    <button type="button" class="btn btn-warning rounded  btn-md scontent" onclick="buynow()">Buy now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container bcontent">
+        <h2 class="a-text-normal">Mechanical Engineering</h2>
+        <hr>
+        <div class="row">
+            <div class="card" style="width: 18rem;">
+                <img src="mec1.jpg" class="card-img-top" width="262" height="330" alt="...">
+                <div class="card-body">
+                    <p class="card-text">A fun of learning Mechanical Engineering Priciples. A simplify way of Learning.</p>
+                    <button type="button" class="btn btn-warning rounded  btn-md scontent" onclick="buynow()">Buy now</button>
+                </div>
+            </div>
+            <div class="card content" style="width: 18rem;">
+                <img src="mec2.jpg" class="card-img-top" width="262" height="330" alt="...">
+                <div class="card-body">
+                    <p class="card-text">A fun of learning automated production. A simplify way of Learning.
+                        </p>
+                        <button type="button" class="btn btn-warning rounded  btn-md scontent" onclick="buynow()">Buy now</button>
+                </div>
+            </div>
+            <div class="card content" style="width: 18rem;">
+                <img src="mec3.jpg" class="card-img-top" width="262" height="330" alt="...">
+                <div class="card-body">
+                    <p class="card-text">A fun of learning Mechanical Vibration. A simplify way of Learning.
+                        </p>
+                        <button type="button" class="btn btn-warning rounded  btn-md scontent" onclick="buynow()">Buy now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container bcontent">
+        <h2 class="a-text-normal">Engineering Mathematics</h2>
+        <hr>
+        <div class="row">
+            <div class="card" style="width: 18rem;">
+                <img src="m1.jpg" class="card-img-top" width="262" height="330"  alt="...">
+                <div class="card-body">
+                    <p class="card-text">A fun of learning Automated Production and Integrated Manufacturing. A simplify way of Learning.</p>
+                    <br>
+                    <br>
+                    <button type="button" class="btn btn-warning rounded  btn-md scontent" onclick="buynow()">Buy now</button>
+                </div>
+            </div>
+            <div class="card content" style="width: 18rem;">
+                <img src="m2.jpg"  class="card-img-top" width="262" height="330" alt="...">
+                <div class="card-body">
+                    <p class="card-text">A fun of learning Foundation Mathematics for Engineering. A simplify way of Learning.</p>
+                    <br>
+                    <br>
+                    <br>
+                    <button type="button" class="btn btn-warning rounded  btn-md scontent" onclick="buynow()">Buy now</button>
+                </div>
+            </div>
+            <div class="card content" style="width: 18rem;">
+                <img src="m3.jpg" class="card-img-top" width="262" height="330" alt="...">
+                <div class="card-body">
+                    <p class="card-text">A fun of learning Engineering Mathematics. A simplify way of Learning.</p>
+                    <br>
+                    <br>
+                    <br>
+                    <button type="button" class="btn btn-warning rounded  btn-md scontent" onclick="buynow()">Buy now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <span class="text-muted">&copy; 2019-2021 Company.Inc .
+                <a href='privacy.html'>Privacy</a> . <a href='agree.html'>Terms</a>
+            </span>
+        </div>
+    </footer>
+
+
+    <script src="facet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
